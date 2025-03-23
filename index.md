@@ -7,4 +7,5 @@ layout: default
 
 ## Notatki
 
+- [Połączenie z DB, wykonywanie zapytań](basic-database.md)
 - [Hibernate](hibernate.md)
