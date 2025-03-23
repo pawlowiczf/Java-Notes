@@ -1,10 +1,10 @@
 ---
-title: BSK
+title: JavaNotes
 layout: default
 ---
 
-**Adres**: [https://pawlowiczf.github.io/bsk](https://pawlowiczf.github.io/bsk)  
+**Adres**: [https://pawlowiczf.github.io/Java-Notes/](https://pawlowiczf.github.io/Java-Notes/)  
 
-## Laboratoria  
+## Notatki
 
-- [Lab 1 - Firewall/zapory ogniowe](firewall.md)
+- [Hibernate](hibernate.md)
