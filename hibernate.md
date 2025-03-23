@@ -20,7 +20,7 @@ Po stworzeniu projektu przez Mavena, należy dodać zależność Hibernate oraz 
     </dependency>
 </dependencies>
 ```
-Należy także stworzyć plik konfiguracyjny dla Hibernate - podać URL bazy danych, użytkownika, hasło i inne właściwości:
+Należy także stworzyć plik konfiguracyjny dla Hibernate w folderze `resources/hibernate.cfg.xml` - podać URL bazy danych, użytkownika, hasło i inne właściwości:
 ```xml
 <hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
     <session-factory>
