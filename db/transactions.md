@@ -5,7 +5,7 @@ layout: default
 
 ## Informacje 
 
-Domyślnie, `connection` wykonujje każde zapytanie od razu, po kolei. W celu stworzenia transakcji należy zmienić tę domyślną opcję. Przykładowo:
+Domyślnie, `connection` wykonuje każde zapytanie od razu, po kolei. W celu stworzenia transakcji należy zmienić tę domyślną opcję. Przykładowo:
 ```java 
 conn.setAutoCommit(false)
 try {
@@ -26,3 +26,11 @@ statement.executeBatch();
 Trzeba uważać, gdyż wiele sterowników różnie obsługuje zapytania batchowe. Gdy jakieś zapytanie w środku, skończy się błędem, pozostałe nadal będą wykonane - takie zachowanie w przypadku transakcji nie jest dobre. Aby to zmienić, podaj parametr w połączeniu:
 `jdbc:mysql://localhost:3306/students?continueBatchOnError=false`
 
+## Prepared Statements 
+W celu uniknięcia np. `SQL injection` warto tworzyć zparametryzowane zapytania do bazy danych. Służy do tego klasa `PreparedStatement`:
+```java
+String query = "SELECT * FROM students WHERE id = ?"
+PreparedStatement ps = conn.prepareStatement(query);
+ps.setInt(1, 13141); // (index number in query, value to put)
+ResultSet rs = ps.executeQuery();
+```
