@@ -8,4 +8,5 @@ layout: default
 ## Notatki
 
 - [Połączenie z DB, wykonywanie zapytań](basic-database.md)
+- [Transactions](transactions.md)
 - [Hibernate](hibernate.md)
