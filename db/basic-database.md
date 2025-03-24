@@ -32,3 +32,13 @@ while (resultSet.next()) {
     System.out.println(id + " " + firstName + " " + lastName);
 }
 ```
+
+## Inny sposób połączenia - więcej kontroli
+```java
+MysqlDataSource dataSource = new MysqlDataSource();
+dataSource.setServerName("localhost");
+dataSource.setDatabaseName("university");
+dataSource.setPort(3306);
+dataSource.setContinueBatchOnError(false);
+Connection conn = dataSource.getConnection("USER", "PASSWORD")
+```
