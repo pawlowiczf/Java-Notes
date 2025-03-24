@@ -9,7 +9,7 @@ Wejdź na repozytorium Maven i znajdź odpowiednią wersję sterownika MySQL - n
 implementation("com.mysql:mysql-connector-j:9.2.0")
 ```
 
-W celu integracji z bazą danych, zdefiniuj URL: `"jdbc:mysql://127.0.0.1:3306/university?"` i ustanów połączenie:
+W celu integracji z bazą danych, zdefiniuj URL: `"jdbc:mysql://127.0.0.1:3306/university"` i ustanów połączenie:
 ```java
 try (Connection connection = DriverManager.getConnection(CONN_STRING, "USER", "PASSWORD")) {
     System.out.println("Connected to database");
