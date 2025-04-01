@@ -16,3 +16,4 @@ layout: default
 - [Spring Boot](/spring/spring_boot.md)
 - [Spring Core](/spring/spring_core.md)
 - [Spring Hibernate](/spring/spring_hibernate.md)
+- [Spring REST](/spring/spring_rest.md)
